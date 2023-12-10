@@ -1,7 +1,7 @@
 {
   "name": "zekepari",
   "version": "0.1.0",
-  "homepage": "https://zekepari.github.io",
+  "homepage": "https://zekepari.com",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
