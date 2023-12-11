@@ -5,7 +5,7 @@ const PortfolioItem = ({ title, description, mediaUrl }) => (
   <div className="max-w-3xl mx-auto mt-8 p-4 bg-white shadow-md rounded-md">
     <h2 className="text-2xl font-semibold mb-4">{title}</h2>
     {mediaUrl && (
-      <div className="max-w-full overflow-hidden rounded-md">
+      <div className="max-w-full overflow-hidden rounded-md mb-4">
         {mediaUrl.endsWith('.mp4') ? (
           <video controls className="w-full">
             <source src={mediaUrl} type="video/mp4" />
@@ -16,7 +16,7 @@ const PortfolioItem = ({ title, description, mediaUrl }) => (
         )}
       </div>
     )}
-    <p className="text-gray-600 mb-4">{description}</p>
+    <p className="text-gray-600">{description}</p>
   </div>
 );
 
