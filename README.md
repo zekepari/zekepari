@@ -10,7 +10,7 @@ I'm Zeke, a passionate tech enthusiast based in Queensland, Australia. I'm curre
 
 ## Education
 🎓 **Bachelor of Computer Science**
-- University of the Sunshine Coast
+- University
 - Expected Graduation: 2026
 
 📝 **Certificate III in Information Technology**
