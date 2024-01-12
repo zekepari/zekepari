@@ -1,21 +1,9 @@
-# Hi there 👋
+Hi.
 
-## About Me
-I'm Zeke, a passionate tech enthusiast based in Queensland, Australia. I'm currently pursuing a Bachelor of Computer Science at the University of the Sunshine Coast, set to graduate in 2026. When I'm not studying, I run Tech Tower, a business that specializes in refurbishing and selling gaming PCs. 
+I'm Zeke, computer enthusiast from Queensland, Australia. I know a bit here and there.
 
-## My Skills and Experience
-- **Languages**: Proficient in Lua and Java; experienced in JavaScript and Python.
-- **Web Development**: Skilled in creating React web applications. Holder of a Meta Front-End Developer Certificate. [View Certificate](https://www.coursera.org/account/accomplishments/professional-cert/K329R2NDRAS9)
-- **Other Interests**: Always curious about new technologies and innovations in the world of gaming and tech.
+Most of my projects are being used in my online communities across various platforms like Roblox and Minecraft, namely Jorji, RoLinker and AsyncRTP. I try to use various languages to improve my cross-language proficiency.
 
-## Education
-🎓 **Bachelor of Computer Science**
-- University
-- Expected Graduation: 2026
+I'm a 1st year Computer Science student, and hold the nationally recognised Certificate III in IT. I also run 'Tech Tower', selling refurbished PCs on eBay.
 
-📝 **Certificate III in Information Technology**
-- School-Based Certificate
-- Year Completed: 2023
-
-## Connect with Me
-- Discord: @noreplynotice
+Connect with me on discord: `@noreplynotice`
