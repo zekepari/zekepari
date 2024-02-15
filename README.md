@@ -5,7 +5,7 @@
 
   Most of my projects are being used in my online communities across various platforms like Roblox and Minecraft, namely Jorji, RoLinker and AsyncRTP. I try to use various languages to improve my cross-language proficiency.
 
-  I'm a 1st year Computer Science student, and hold two nationally recognised Certificate IIIs in IT and Business. I also run two businesses; Tech Tower (Selling refurbished PCs on eBay), and Helter Development (Roblox game development       studio).
+  I'm a 1st year Computer Science student, and hold two nationally recognised Certificate IIIs in IT and Business. I also run two businesses; Tech Tower (Selling Refurbished PCs via eBay), and Eve's Games (Roblox Game Development       Studio).
 
   Discord is the only way you can reach me.
 
