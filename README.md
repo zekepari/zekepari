@@ -1,7 +1,7 @@
 
   Hi. 👋
 
-  I'm Zeke, computer enthusiast from Queensland, Australia. I know a bit here and there.
+  I'm Zeke, computer hobbyist from Queensland, Australia. I know a bit here and there.
 
   Most of my projects are being used in my online communities across various platforms like Roblox and Minecraft, namely Jorji, RoLinker and AsyncRTP. I try to use various languages to improve my cross-language proficiency.
 
