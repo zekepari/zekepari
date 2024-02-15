@@ -6,7 +6,7 @@ Most of my projects are being used in my online communities across various platf
 
 I'm a 1st year Computer Science student, and hold two nationally recognised Certificate IIIs in IT and Business. I also run two businesses; Tech Tower (Selling refurbished PCs on eBay), and Helter Development (Roblox game development studio).
 
-[![My Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?align=center&titleAlign=center&lineCount=4&theme=github&line1=react%2Creact%2C52bbff%3Btailwindcss%2Ctailwindcss%2C49aaff%3Bheadlessui%2Cheadlessui%2C3dacff%3B&line2=prisma%2Cprisma%2Cffffff%3Bmongodb%2Cmongodb%2C2da125%3Bpostgresql%2Cpostgresql%2C2a6da9%3B&line3=nextdotjs%2Cnextjs%2Cffffff%3Bvercel%2Cvercel%2C000000%3Btypescript%2Ctypescript%2C45a8ff%3B&line4=javascript%2Cjavascript%2Cffe842%3Bopenjdk%2Cjava%2Cc59936%3Blua%2Clua%2C1549aa%3B)]
+![My Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?align=center&titleAlign=center&lineCount=4&theme=github&line1=react%2Creact%2C52bbff%3Btailwindcss%2Ctailwindcss%2C49aaff%3Bheadlessui%2Cheadlessui%2C3dacff%3B&line2=prisma%2Cprisma%2Cffffff%3Bmongodb%2Cmongodb%2C2da125%3Bpostgresql%2Cpostgresql%2C2a6da9%3B&line3=nextdotjs%2Cnextjs%2Cffffff%3Bvercel%2Cvercel%2C000000%3Btypescript%2Ctypescript%2C45a8ff%3B&line4=javascript%2Cjavascript%2Cffe842%3Bopenjdk%2Cjava%2Cc59936%3Blua%2Clua%2C1549aa%3B)
 
 Discord is the only way you can reach me.
 
