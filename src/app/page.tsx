@@ -1,113 +1,148 @@
 import Image from "next/image";
+import me from "@/app/me.png"
+import { Discord, GitHub, LinkedIn, Univeristy } from "./_components/Icons";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="bg-neutral-100 border-b py-20">
+        <div className="container max-w-screen-lg mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between mb-12">
+            <div>
+              <h1 className="text-6xl font-black">Zeke Pari</h1>
+              <h2 className="text-lg font-semibold italic border-b-8 border-dotted border-blue-500 mb-4">Wannabe Full-Stack Developer!</h2>
+              <div className="flex space-x-2">
+                <LinkedIn className="hover:transition hover:stroke-blue-500 duration-300" />
+                <GitHub className="hover:transition hover:stroke-blue-500 duration-300" />
+                <Discord className="hover:transition hover:stroke-blue-500 duration-300" />
+              </div>
+            </div>
+            <Image src={me} alt="Picture of me" width={250} className="rounded-full border-b-8 border-blue-500 mb-4" quality={100} />
+          </div>
+          <div className="flex justify-center">
+            <img src="https://skillicons.dev/icons?i=html,css,js,ts,lua,java,python,react,next,mongo,postgresql,vercel,tailwind,prisma&perline=7" alt="Skill icons" className="w-full sm:hidden" />
+            <img src="https://skillicons.dev/icons?i=html,css,js,ts,lua,java,python,react,next,mongo,postgresql,vercel,tailwind,prisma" alt="Skill icons" className="w-full hidden sm:block" />
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+      <section className="border-b py-20">
+        <div className="container max-w-screen-lg mx-auto space-y-16">
+          <h1 className="text-6xl font-black text-center underline decoration-double decoration-blue-500">Education</h1>
+          <p><a href="https://www.aqf.edu.au/framework/aqf-qualifications" target="_blank" className="text-blue-500 hover:text-blue-400">Australian Qualifications Framework ↗</a></p>
+          <article>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-4xl font-bold">Bachelor of Computer Science</h2>
+              <Univeristy className="w-48" />
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Minor in Cloud Computing</li>
+              <li>95% Average</li>
+              <li>Graduating 2026</li>
+            </ul>
+          </article>
+          <article>
+            <div className="flex justify-between ">
+              <h2 className="text-4xl font-bold ">Certificate III in ICT</h2>
+              <h2 className="text-4xl font-bold mb-4">VETiS</h2>
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Completed 2023</li>
+            </ul>
+          </article>
+          <article>
+            <div className="flex justify-between ">
+              <h2 className="text-4xl font-bold ">Certificate III in Business</h2>
+              <h2 className="text-4xl font-bold mb-4">VETiS</h2>
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Completed 2023</li>
+            </ul>
+          </article>
+          <article>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-4xl font-bold ">Certificate III in Aviation</h2>
+              <Image src='/basair-logo-v2.png' alt="Basair College Logo" width={200} height={200} className="bg-blue-900 rounded px-4 py-2" />
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Remote Pilot Specification</li>
+              <li>Completed 2022</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section className="bg-neutral-100 border-b py-20">
+        <div className="container max-w-screen-lg mx-auto space-y-20">
+          <h1 className="text-6xl font-black text-center underline decoration-wavy decoration-blue-500">Projects</h1>
+          <article className="space-y-4">
+            <div>
+              <div className="flex justify-between mb-4">
+                <h2 className="text-4xl font-bold">RoLinker 🔧</h2>
+                <h3 className="text-3xl font-semibold text-neutral-600">Software Service</h3>
+              </div>
+              <p>Link Roblox and Discord accounts together by connecting both of them to RoLinker. Access a discord bot which enables commands for Roblox groups, and an optional Roblox bot account to facilitate group management from Discord.</p>
+            </div>
+            <video className="w-full h-auto max-w-full" controls>
+              <source src="/rolinker.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+          <article className="space-y-4">
+            <div>
+              <div className="flex justify-between mb-4">
+                <h2 className="text-4xl font-bold">Arstotzka 🪖</h2>
+                <h3 className="text-3xl font-semibold text-neutral-600">Roblox Game</h3>
+              </div>
+              <p>Showcasing various custom features such as user interface, marketplace, weapons, economy, NPCs, character customization, and crime.</p>
+            </div>
+            <video className="w-full h-auto max-w-full" controls>
+              <source src="/arstotzka.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+        </div>
+      </section>
+      <section className="border-b py-20">
+        <div className="container max-w-screen-lg mx-auto space-y-16">
+          <h1 className="text-6xl font-black text-center underline decoration-dotted decoration-blue-500">Employment</h1>
+          <article>
+            <div className="flex justify-between items-center">
+              <h2 className="text-4xl font-bold">Online Department, Woolworths</h2>
+              <Image src='/woolworths.webp' alt="Woolworths Logo" width={250} height={50} />
+            </div>
+            <p className="text-xl font-semibold text-neutral-600 mb-4">Aug 2021 - Present (~3 Years)</p>
+            <ul className="list-disc list-inside">
+              <li>Team Supervisor</li>
+              <li>Assured accurate and timely picking, dispatching, and collection of online orders to maintain customer satisfaction.</li>
+              <li>Regularly conducted audits of picked orders to ensure accuracy and minimize discrepancies.</li>
+              <li>Effectively resolved customer inquiries and issues via the phoneline, ensuring a seamless customer experience.</li>
+              <li>Communicated proactively with customers about order statuses and any potential delays or issues.</li>
+              <li>Supervised the online order-picking team during evening shifts to uphold operational efficiency.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section className="bg-neutral-100 border-b py-20">
+        <div className="container max-w-screen-lg mx-auto space-y-16">
+          <h1 className="text-6xl font-black text-center underline decoration-blue-500">Experience</h1>
+          <article>
+            <div className="flex justify-between items-center">
+              <h2 className="text-4xl font-bold">Health Information, Metro North</h2>
+              <Image src='/metroNorth.png' alt="Woolworths Logo" width={250} height={50} />
+            </div>
+            <p className="text-xl font-semibold text-neutral-600 mb-4">Oct - Nov 2023</p>
+            <ul className="list-disc list-inside">
+              <li>Managed and navigated the Hibiscus system, ensuring accurate data entry and retrieval of patient information.</li>
+              <li>Handled the dispatch, collection, and meticulous organisation of medical records to facilitate easy retrieval and maintain data integrity.</li>
+              <li>Collaborated with various departments to ensure that medical records were accurately and promptly dispatched and received, maintaining a smooth flow of information.</li>
+              <li>Vigilantly maintained strict confidentiality and security of patient information, adhering to all relevant data protection regulations and hospital policies.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section className="py-20 container max-w-screen-lg mx-auto text-center">
+        <h1 className="text-4xl font-black">That's all!</h1>
+        <p className="text-xl font-semibold text-neutral-600">Thanks for reading.</p>
+      </section>
+    </>
   );
 }
