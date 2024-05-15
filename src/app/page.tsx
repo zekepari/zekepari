@@ -1,5 +1,4 @@
 import Image from "next/image";
-import me from "@/app/me.png"
 import { Discord, GitHub, LinkedIn, Univeristy } from "./_components/Icons";
 
 export default function Home() {
@@ -17,7 +16,7 @@ export default function Home() {
                 <Discord className="hover:transition hover:stroke-blue-500 duration-300" />
               </div>
             </div>
-            <Image src={me} alt="Picture of me" width={250} className="rounded-full border-b-8 border-blue-500 mb-4" quality={100} />
+            <Image src='/me.png' alt="Picture of me" className="rounded-full border-b-8 border-blue-500 mb-4" width={250} height={250} quality={100} />
           </div>
           <div className="flex justify-center">
             <img src="https://skillicons.dev/icons?i=html,css,js,ts,lua,java,python,react,next,mongo,postgresql,vercel,tailwind,prisma&perline=7" alt="Skill icons" className="w-full sm:hidden" />
@@ -140,7 +139,7 @@ export default function Home() {
         </div>
       </section>
       <section className="py-20 container max-w-screen-lg mx-auto text-center">
-        <h1 className="text-4xl font-black">That's all!</h1>
+        <h1 className="text-4xl font-black">That&apos;s all!</h1>
         <p className="text-xl font-semibold text-neutral-600">Thanks for reading.</p>
       </section>
     </>
