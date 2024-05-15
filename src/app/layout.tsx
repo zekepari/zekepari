@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 const inter = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "zekepari.dev",
+  title: "Zeke Pari",
   description: "Zeke's Developer Portfolio",
 };
 
