@@ -10,10 +10,10 @@ export default function Home() {
             <div>
               <h1 className="text-6xl font-black">Zeke Pari</h1>
               <h2 className="text-lg font-semibold italic border-b-8 border-dotted border-blue-500 mb-4">Wannabe Full-Stack Developer!</h2>
-              <div className="flex space-x-2">
-                <LinkedIn className="hover:transition hover:stroke-blue-500 duration-300" />
-                <GitHub className="hover:transition hover:stroke-blue-500 duration-300" />
-                <Discord className="hover:transition hover:stroke-blue-500 duration-300" />
+              <div className="flex items-center space-x-2">
+                <a href="https://www.linkedin.com/in/ezekiel-pari-96a458258/" target="_blank"><LinkedIn className="hover:transition hover:stroke-blue-500 duration-300" /></a>
+                <a href="https://github.com/zekepari" target="_blank"><GitHub className="hover:transition hover:stroke-blue-500 duration-300" /></a>
+                <Discord /><span className="text-lg font-semibold text-neutral-800">@zekek_</span>
               </div>
             </div>
             <Image src='/me.png' alt="Picture of me" className="rounded-full border-b-8 border-blue-500 mb-4" width={250} height={250} quality={100} />
