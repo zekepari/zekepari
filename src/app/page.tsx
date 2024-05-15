@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Discord, GitHub, LinkedIn, Univeristy } from "./_components/Icons";
+import { Discord, GitHub, LinkedIn } from "./_components/Icons";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
           <article>
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-4xl font-bold">Bachelor of Computer Science</h2>
-              <Univeristy className="w-48" />
+              <Image src='/unisc.svg' alt="UniSC Logo" width={200} height={100} />
             </div>
             <ul className="list-disc list-inside">
               <li>Minor in Cloud Computing</li>
@@ -55,6 +55,16 @@ export default function Home() {
             </div>
             <ul className="list-disc list-inside">
               <li>Completed 2023</li>
+            </ul>
+          </article>
+          <article>
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-4xl font-bold ">Meta Certificate in Front-End Development</h2>
+              <Image src='/Meta-Logo.png' alt="Meta Logo" width={200} height={100} />
+            </div>
+            <ul className="list-disc list-inside">
+              <li>Remote Pilot Specification</li>
+              <li>Completed 2022</li>
             </ul>
           </article>
           <article>
