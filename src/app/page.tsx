@@ -35,7 +35,6 @@ export default function Home() {
             </div>
             <ul className="list-disc list-inside">
               <li>Minor in Cloud Computing</li>
-              <li>95% Average</li>
               <li>Graduating 2026</li>
             </ul>
           </article>
@@ -63,8 +62,8 @@ export default function Home() {
               <Image src='/Meta-Logo.png' alt="Meta Logo" width={200} height={100} />
             </div>
             <ul className="list-disc list-inside">
-              <li>Remote Pilot Specification</li>
-              <li>Completed 2022</li>
+              <li><a href="https://www.coursera.org/account/accomplishments/professional-cert/K329R2NDRAS9" target="_blank" className="text-blue-500 hover:text-blue-400">Digital Certificate ↗</a></li>
+              <li>Completed 2023</li>
             </ul>
           </article>
           <article>
