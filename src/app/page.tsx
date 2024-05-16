@@ -4,6 +4,7 @@ import { Education } from "./_components/Education";
 import { Projects } from "./_components/Projects";
 import { Employment } from "./_components/Employment";
 import { Experience } from "./_components/Experience";
+import Me from "./_assets/me.png";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
                 <Discord /><span className="text-lg font-semibold text-neutral-800">@zekek_</span>
               </div>
             </div>
-            <Image src='/me.png' alt="Picture of me" className="rounded-full border-b-8 border-blue-500 mb-4" width={250} height={250} quality={100} />
+            <Image src={Me} alt="Picture of me" width={250} className="rounded-full border-b-8 border-blue-500 mb-4" quality={100} />
           </div>
           <div className="flex justify-center">
             <img src="https://skillicons.dev/icons?i=html,css,js,ts,lua,java,python,react,next,mongo,postgresql,vercel,tailwind,prisma&perline=7" alt="Skill icons" className="w-full sm:hidden" />
