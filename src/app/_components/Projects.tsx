@@ -6,10 +6,11 @@ export function Projects() {
           <article className="space-y-4">
             <div>
               <div className="flex justify-between mb-4">
-                <h2 className="text-4xl font-bold">RoLinker 🔧</h2>
+                <h2 className="text-4xl font-bold">RoLinker 🔧 <a href="https://rolinker.net" target="_blank" className="text-blue-500 hover:text-blue-400">visit ↗</a></h2>
                 <h3 className="text-3xl font-semibold text-neutral-600 text-right">Software Service</h3>
               </div>
               <p>Link Roblox and Discord accounts together by connecting both of them to RoLinker. Access a discord bot which enables commands for Roblox groups, and an optional Roblox bot account to facilitate group management from Discord.</p>
+              <p>Note I used next.js for this project to simplify my backend.</p>
             </div>
             <video className="w-full h-auto max-w-full" controls>
               <source src="/rolinker.webm" type="video/webm" />
@@ -23,6 +24,7 @@ export function Projects() {
                 <h3 className="text-3xl font-semibold text-neutral-600 text-right">Roblox Game</h3>
               </div>
               <p>Showcasing various custom features such as user interface, marketplace, weapons, economy, NPCs, character customization, and crime.</p>
+              <p>It is important to note the Roblox platform does not abstract this system at all, there is a large degree of personalisation.</p>
             </div>
             <video className="w-full h-auto max-w-full" controls>
               <source src="/arstotzka.webm" type="video/webm" />
