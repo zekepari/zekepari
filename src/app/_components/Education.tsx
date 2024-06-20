@@ -18,14 +18,14 @@ export function Education() {
             Australian Qualifications Framework ↗
           </a>
         </p>
-        {qualifications.map((qualification) => (
-          <article className="flex flex-col-reverse items-center justify-between md:flex-row md:items-start" key={qualification.name}>
+        {qualifications.map((qualification, index) => (
+          <article className="flex flex-col-reverse items-center justify-between md:flex-row md:items-start" key={index}>
             <div>
               <h2 className="text-4xl font-bold">{qualification.name}</h2>
               <ul className="list-inside list-disc">
-                {qualification.notes?.map((note) => <li>{note}</li>)}
-                {qualification.links?.map((link) => (
-                  <li>
+                {qualification.notes?.map((note, index) => <li key={index}>{note}</li>)}
+                {qualification.links?.map((link, index) => (
+                  <li key={index}>
                     <Link
                       href={link.link}
                       target="_blank"
