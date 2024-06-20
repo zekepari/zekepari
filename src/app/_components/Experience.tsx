@@ -1,5 +1,5 @@
 import Image from "next/image";
-import MetroNorth from "@/app/_assets/metroNorth.png"
+import MetroNorth from "@/assets/metroNorth.png"
 
 export function Experience() {
   return (

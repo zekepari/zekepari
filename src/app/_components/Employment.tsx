@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Woolworths from "@/app/_assets/woolworths.webp"
+import Woolworths from "@/assets/woolworths.webp"
 
 export function Employment() {
     return (
