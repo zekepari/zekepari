@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { qualifications } from "@/qualifications";
+import { qualifications } from "@/Qualifications";
 import Link from "next/link";
 
 export function Education() {
@@ -19,7 +19,7 @@ export function Education() {
           </a>
         </p>
         {qualifications.map((qualification) => (
-          <article className="flex flex-col-reverse items-center justify-between md:flex-row md:items-start">
+          <article className="flex flex-col-reverse items-center justify-between md:flex-row md:items-start" key={qualification.name}>
             <div>
               <h2 className="text-4xl font-bold">{qualification.name}</h2>
               <ul className="list-inside list-disc">
