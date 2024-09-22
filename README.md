@@ -1,36 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+  Hi. 👋
 
-First, run the development server:
+  I'm Zeke, I do full stack.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  Discord is the only way you can reach me.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  [![Discord](https://img.shields.io/badge/-noreplynotice-262626?style=flat-square&labelColor=262626&logo=discord&logoColor=white&link=https://discordapp.com/users/861915849018966077/)](https://discordapp.com/users/861915849018966077/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p align="center">
+  <img src="https://github-readme-tech-stack.vercel.app/api/cards?align=center&titleAlign=center&lineCount=4&hideBg=true&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=react%2Creact%2C52bbff%3Btailwindcss%2Ctailwindcss%2C49aaff%3Bheadlessui%2Cheadlessui%2C3dacff%3B&line2=prisma%2Cprisma%2Cffffff%3Bmongodb%2Cmongodb%2C2da125%3Bpostgresql%2Cpostgresql%2C2a6da9%3B&line3=nextdotjs%2Cnext.js%2Cffffff%3Bvercel%2Cvercel%2C000000%3Btypescript%2Ctypescript%2C45a8ff%3B&line4=javascript%2Cjavascript%2Cffe842%3Bopenjdk%2Cjava%2Cc59936%3Blua%2Clua%2C1549aa%3Bpython%2Cpython%2C58a3fd%3B" alt="My Tech Stack" />
+</p>
