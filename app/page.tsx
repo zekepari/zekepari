@@ -1,7 +1,7 @@
 import CollapsibleVideo from "@/components/CollapsibleVideo";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ArrowLeft, ArrowRight, CircleAlert, CornerRightDown, ExternalLink, Flag, Globe, Hospital, Mail, Minus, Radio, Wrench } from "lucide-react";
+import { ArrowLeft, CircleAlert, CornerRightDown, ExternalLink, Flag, Globe, Hospital, Mail, Radio, Wrench } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
