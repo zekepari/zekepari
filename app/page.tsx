@@ -1,7 +1,7 @@
 import CollapsibleVideo from "@/components/CollapsibleVideo";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CircleAlert, CornerRightDown, ExternalLink, Flag, Globe, Hospital, Wrench } from "lucide-react";
+import { CircleAlert, CornerRightDown, ExternalLink, Flag, Globe, Hospital, Radio, Wrench } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -79,16 +79,53 @@ export default function Home() {
           <h3 className="text-2xl md:text-3xl font-semibold">WorldMC <Globe className="inline-block text-blue-500"/></h3>
           <p className="opacity-75">A massive multiplayer online experience centered around a map of the Earth. This website, as well as the backend API which drives it, showcases in-game markets, players, towns, and nations.</p>
           <CollapsibleVideo src="/worldmc.webm" title="WorldMC Demo" />
+          <p>
+            <Link
+              href="https://worldmc.net" // Replace with actual link
+              className="text-blue-500 hover:text-blue-400"
+              target="_blank"
+            >
+              Visit Website <ExternalLink className="inline-block size-4" />
+            </Link>
+          </p>
         </div>
         <div className="space-y-2">
-          <h3 className="text-2xl md:text-3xl font-semibold">CarePulse <Hospital className="inline-block text-purple-500"/></h3>
-          <p className="opacity-75">A patient management system with a patient-centric design. CarePulse features an admin dashboard for appointment management, a safe sign-on process for new patients, OTP, and SMS appointment verification/confirmation.</p>
-          <CollapsibleVideo src="/carepulse.webm" title="CarePulse Demo" />
+          <h3 className="text-2xl md:text-3xl font-semibold">
+            Shockwaves Radio <Radio className="inline-block text-indigo-500" />
+          </h3>
+          <p className="opacity-75">
+            A dynamic radio website developed for a client, featuring Discord authentication for staff management, role-based access for Owners and Administrators, and integration with a MySQL database using Prisma ORM. 
+            The platform showcases music tracks, schedules, and partnerships with simulation games like Farming Simulator and Euro Truck Simulator.
+          </p>
+          <CollapsibleVideo src="/shockwaves.webm" title="Shockwaves Radio Demo" />
+          <p>
+            <Link
+              href="https://shockwavesradio.com" // Replace with actual link
+              className="text-blue-500 hover:text-blue-400"
+              target="_blank"
+            >
+              Visit Website <ExternalLink className="inline-block size-4" />
+            </Link>
+          </p>
         </div>
         <div className="space-y-2">
           <h3 className="text-2xl md:text-3xl font-semibold">RoLinker <Wrench className="inline-block text-red-500"/></h3>
           <p className="opacity-75">Link Roblox and Discord accounts together by connecting both of them to RoLinker. Access a discord bot which enables commands for Roblox groups, and an optional Roblox bot account to facilitate group management from Discord.</p>
           <CollapsibleVideo src="/rolinker.webm" title="RoLinker Demo" />
+          <p>
+            <Link
+              href="https://rolinker.net" // Replace with actual link
+              className="text-blue-500 hover:text-blue-400"
+              target="_blank"
+            >
+              Visit Website <ExternalLink className="inline-block size-4" />
+            </Link>
+          </p>
+        </div>
+        <div className="space-y-2">
+          <h3 className="text-2xl md:text-3xl font-semibold">CarePulse <Hospital className="inline-block text-purple-500"/></h3>
+          <p className="opacity-75">A patient management system with a patient-centric design. CarePulse features an admin dashboard for appointment management, a safe sign-on process for new patients, OTP, and SMS appointment verification/confirmation.</p>
+          <CollapsibleVideo src="/carepulse.webm" title="CarePulse Demo" />
         </div>
         <div className="space-y-2">
           <h3 className="text-2xl md:text-3xl font-semibold">Arstotzka <Flag className="inline-block text-green-700"/></h3>
