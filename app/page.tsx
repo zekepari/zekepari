@@ -1,7 +1,7 @@
 import CollapsibleVideo from "@/components/CollapsibleVideo";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CircleAlert, CornerRightDown, ExternalLink, Flag, Globe, Hospital, Radio, Wrench } from "lucide-react";
+import { ArrowLeft, ArrowRight, CircleAlert, CornerRightDown, ExternalLink, Flag, Globe, Hospital, Mail, Minus, Radio, Wrench } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,6 +21,14 @@ export default function Home() {
               <Link href="https://github.com/zekepari" target="_blank" className="hover:text-blue-600 transition">
                 <FontAwesomeIcon icon={faGithub} className="size-8" />
               </Link>
+              <Link href="mailto:me@zekepari.dev" className="hover:text-blue-600 transition flex gap-1 items-center">
+                <Mail className="size-4" />
+                <p>me@zekepari.dev</p>
+              </Link>
+              <div className="flex items-center text-red-500">
+                <ArrowLeft />
+                <p className="font-semibold ml-2">Contact me!</p>
+              </div>
             </div>
           </div>
           
@@ -133,8 +141,12 @@ export default function Home() {
         </div>
       </section>
       <section className="text-center">
-      <h3 className="text-xl font-black">That&apos;s all!</h3>
+        <h3 className="text-xl font-black">That&apos;s all!</h3>
         <p className="opacity-75">Thanks for reading.</p>
+        <Link href="mailto:me@zekepari.dev" className="hover:text-blue-600 transition">
+          <Mail className="size-4 inline-block mr-1" />
+          me@zekepari.dev
+        </Link>
       </section>
     </div>
   );
