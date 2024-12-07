@@ -94,8 +94,7 @@ export default function Home() {
             Shockwaves Radio <Radio className="inline-block text-indigo-500" />
           </h3>
           <p className="opacity-75">
-            A dynamic radio website developed for a client, featuring Discord authentication for staff management, role-based access for Owners and Administrators, and integration with a MySQL database using Prisma ORM. 
-            The platform showcases music tracks, schedules, and partnerships with simulation games like Farming Simulator and Euro Truck Simulator.
+          A radio website featuring live music streaming, staff management, and partnerships with games like Farming Simulator and Euro Truck Simulator. The platform allows staff to manage playlists, schedules, and roles through a dedicated dashboard.
           </p>
           <CollapsibleVideo src="/shockwaves.webm" title="Shockwaves Radio Demo" />
           <p>
