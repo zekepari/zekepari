@@ -14,7 +14,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-black">Ezekiel (Zeke) Pari</h1>
             <p className="md:text-lg opacity-75">Full Stack Developer</p>
             <hr/>
-            <div className="flex gap-2 mt-2">
+            <div className="flex gap-2 mt-2 flex-wrap">
               <Link href="https://www.linkedin.com/in/ezekiel-pari-96a458258/" target="_blank" className="hover:text-blue-600 transition">
                 <FontAwesomeIcon icon={faLinkedin} className="size-8" />
               </Link>
@@ -25,10 +25,6 @@ export default function Home() {
                 <Mail className="size-4" />
                 <p>me@zekepari.dev</p>
               </Link>
-              <div className="flex items-center text-red-500">
-                <ArrowLeft />
-                <p className="font-semibold ml-2">Contact me!</p>
-              </div>
             </div>
           </div>
           
