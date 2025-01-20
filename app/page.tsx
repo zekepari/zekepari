@@ -139,7 +139,6 @@ export default function Home() {
             features, support, and updates. Aimed to enhance user experience
             with seamless navigation and responsiveness across devices.
           </p>
-          <CollapsibleVideo title="RoGold Demo" />
           <p>
             <Link
               href="https://rogold.live"

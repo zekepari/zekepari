@@ -5,7 +5,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 interface CollapsibleVideoProps {
-  src?: string | null;
+  src: string;
   title: string;
 }
 
@@ -44,18 +44,10 @@ export default function CollapsibleVideo({
         }}
         className={clsx("overflow-hidden transition-[max-height] duration-300")}
       >
-        {src ? (
-          <video className="w-full" controls>
-            <source src={src} type="video/webm" />
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <div className="p-4">
-            <p className="text-gray-500">
-              The video is not available. Please visit the website instead.
-            </p>
-          </div>
-        )}
+        <video className="w-full" controls>
+          <source src={src} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
