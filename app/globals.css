@@ -12,4 +12,7 @@
     h3 {
         @apply text-2xl md:text-3xl font-semibold;
     }
+    h4 {
+        @apply text-xl font-black
+    }
 }

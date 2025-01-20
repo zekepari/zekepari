@@ -52,17 +52,11 @@ export default function Home() {
 
           <Image
             src="/Zekes.jpg"
+            alt="Picture of me"
             width={200}
             height={200}
-            alt="Picture of me"
-            className="aspect-square object-cover border p-2 hidden md:block"
-          />
-          <Image
-            src="/Zekes.jpg"
-            width={150}
-            height={150}
-            alt="Picture of me"
-            className="aspect-square object-cover border p-2 md:hidden"
+            className="aspect-square object-cover border p-2"
+            sizes="(min-width: 768px) 200px, 150px"
           />
         </div>
 
@@ -247,7 +241,7 @@ export default function Home() {
         </div>
       </section>
       <section className="text-center">
-        <h3 className="text-xl font-black">That&apos;s all!</h3>
+        <h4>That&apos;s all!</h4>
         <p className="opacity-75">Thanks for reading.</p>
         <Link
           href="mailto:me@zekepari.dev"
