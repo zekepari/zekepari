@@ -20,12 +20,12 @@ export default function Home() {
   return (
     <div className="space-y-8">
       <section className="space-y-4">
-        <div className="flex justify-around items-center">
+        <div className="flex items-center">
           <div className="w-full mr-2">
             <h1>Ezekiel (Zeke) Pari</h1>
             <p className="md:text-lg opacity-75">Full Stack Developer</p>
             <hr className="-mr-2" />
-            <div className="flex gap-2 mt-2  flex-wrap">
+            <div className="flex gap-2 mt-2 flex-wrap items-center">
               <Link
                 href="https://www.linkedin.com/in/ezekiel-pari-96a458258/"
                 target="_blank"
@@ -42,10 +42,10 @@ export default function Home() {
               </Link>
               <Link
                 href="mailto:me@zekepari.dev"
-                className="hover:text-blue-600 transition flex gap-1 items-center"
+                className="hover:text-blue-600 transition"
               >
-                <Mail className="size-4" />
-                <p>me@zekepari.dev</p>
+                <Mail className="size-4 inline-block mr-1" />
+                <span>me@zekepari.dev</span>
               </Link>
             </div>
           </div>
@@ -244,10 +244,10 @@ export default function Home() {
         <p className="opacity-75">Thanks for reading.</p>
         <Link
           href="mailto:me@zekepari.dev"
-          className="hover:text-blue-600 transition"
+          className="hover:text-blue-600 transition-colors"
         >
           <Mail className="size-4 inline-block mr-1" />
-          me@zekepari.dev
+          <span>me@zekepari.dev</span>
         </Link>
       </section>
     </div>
