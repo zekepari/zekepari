@@ -21,11 +21,11 @@ export default function Home() {
     <div className="space-y-8">
       <section className="space-y-4">
         <div className="flex justify-around items-center">
-          <div className="w-full">
+          <div className="w-full mr-2">
             <h1>Ezekiel (Zeke) Pari</h1>
             <p className="md:text-lg opacity-75">Full Stack Developer</p>
-            <hr />
-            <div className="flex gap-2 mt-2 flex-wrap">
+            <hr className="-mr-2" />
+            <div className="flex gap-2 mt-2  flex-wrap">
               <Link
                 href="https://www.linkedin.com/in/ezekiel-pari-96a458258/"
                 target="_blank"
@@ -56,7 +56,7 @@ export default function Home() {
             width={200}
             height={200}
             className="aspect-square object-cover border p-2"
-            sizes="(min-width: 768px) 200px, 150px"
+            sizes="(min-width: 768px) 200px, (min-width: 640px) 150px, 100px"
           />
         </div>
 
