@@ -24,8 +24,8 @@ export default function Home() {
           <div className="w-full mr-2">
             <h1>Ezekiel (Zeke) Pari</h1>
             <p className="md:text-lg opacity-75">Full Stack Developer</p>
-            <hr className="-mr-2" />
-            <div className="flex gap-2 mt-2 flex-wrap items-center">
+            <hr className="-mr-2 mb-2" />
+            <div className="flex gap-2 flex-wrap items-center">
               <Link
                 href="https://www.linkedin.com/in/ezekiel-pari-96a458258/"
                 target="_blank"
