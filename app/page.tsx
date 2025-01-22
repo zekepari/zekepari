@@ -56,7 +56,7 @@ export default function Home() {
             width={200}
             height={200}
             className="aspect-square object-cover border p-2"
-            sizes="(min-width: 768px) 200px, (min-width: 640px) 150px, 100px"
+            sizes="(min-width: 768px) 200px, 150px"
           />
         </div>
 
