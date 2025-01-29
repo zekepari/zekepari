@@ -133,11 +133,16 @@ export default function Home() {
             RoGold <Blocks className="inline-block text-amber-500" />
           </h3>
           <p className="opacity-75">
-            Official website for the RoGold extension, designed for Roblox
-            enthusiasts and developers. Built with Next.js, the site features a
-            sleek and intuitive interface, providing easy access to extension
-            features, support, and updates. Aimed to enhance user experience
-            with seamless navigation and responsiveness across devices.
+            Official website for the RoGold extension. Built with Next.js, the
+            site features a sleek and intuitive interface that provides seamless
+            access to extension features, support, and updates. Key
+            implementations include multilingual support, interactive demos, and
+            integration with backend services using Chargebee for subscription
+            management. Enhanced user experience through responsive design,
+            cross-browser optimization, and performance improvements such as
+            file and image optimization. Utilized Docker for streamlined
+            deployment and integrated robust logging with Winston for effective
+            monitoring.
           </p>
           <p>
             <Link
