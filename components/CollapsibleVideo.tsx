@@ -1,7 +1,7 @@
 "use client";
 
 import clsx from "clsx";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
 interface CollapsibleVideoProps {
@@ -15,11 +15,24 @@ export default function CollapsibleVideo({
 }: CollapsibleVideoProps) {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
-  const [contentHeight, setContentHeight] = useState(0);
+  const contentHeightRef = useRef<number>(0);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     if (contentRef.current) {
-      setContentHeight(contentRef.current.scrollHeight);
+      contentHeightRef.current = contentRef.current.scrollHeight;
+    }
+  }, [src]);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isOpen) {
+        videoRef.current.play().catch((error) => {
+          console.error("Error attempting to play the video:", error);
+        });
+      } else {
+        videoRef.current.pause();
+      }
     }
   }, [isOpen]);
 
@@ -30,21 +43,23 @@ export default function CollapsibleVideo({
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}
-        {isOpen ? (
-          <ChevronUp className="size-5" />
-        ) : (
-          <ChevronDown className="size-5" />
-        )}
+        <ChevronDown
+          className={clsx(
+            "size-5 transition-transform duration-300",
+            isOpen && "transform rotate-180"
+          )}
+        />
       </button>
 
       <div
         ref={contentRef}
         style={{
-          maxHeight: isOpen ? `${contentHeight}px` : "0px",
+          maxHeight: isOpen ? `${contentHeightRef.current}px` : "0px",
         }}
-        className={clsx("overflow-hidden transition-[max-height] duration-300")}
+        className="overflow-hidden transition-max-height duration-300"
+        aria-hidden={!isOpen}
       >
-        <video className="w-full" controls>
+        <video ref={videoRef} className="w-full" muted controls loop>
           <source src={src} type="video/webm" />
           Your browser does not support the video tag.
         </video>
