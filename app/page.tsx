@@ -163,7 +163,7 @@ export default function Home() {
             Earth. This website, as well as the backend API which drives it,
             showcases in-game markets, players, towns, and nations.
           </p>
-          <CollapsibleVideo src="/worldmc.webm" title="WorldMC Demo" />
+          <CollapsibleVideo src="/videos/worldmc.webm" title="WorldMC Demo" />
           <p>
             <Link
               href="https://worldmc.net"
@@ -185,7 +185,7 @@ export default function Home() {
             and roles through a dedicated dashboard.
           </p>
           <CollapsibleVideo
-            src="/shockwaves.webm"
+            src="/videos/shockwaves.webm"
             title="Shockwaves Radio Demo"
           />
           <p>
@@ -208,7 +208,7 @@ export default function Home() {
             groups, and an optional Roblox bot account to facilitate group
             management from Discord.
           </p>
-          <CollapsibleVideo src="/rolinker.webm" title="RoLinker Demo" />
+          <CollapsibleVideo src="/videos/rolinker.webm" title="RoLinker Demo" />
           <p>
             <Link
               href="https://rolinker.net"
@@ -229,7 +229,10 @@ export default function Home() {
             sign-on process for new patients, OTP, and SMS appointment
             verification/confirmation.
           </p>
-          <CollapsibleVideo src="/carepulse.webm" title="CarePulse Demo" />
+          <CollapsibleVideo
+            src="/videos/carepulse.webm"
+            title="CarePulse Demo"
+          />
         </div>
         <div className="space-y-2">
           <h3>
@@ -241,7 +244,10 @@ export default function Home() {
             crime. The UI design captures the 1980s aesthetic, following the
             theme of Arstotzka.
           </p>
-          <CollapsibleVideo src="/arstotzka.webm" title="Arstotzka Demo" />
+          <CollapsibleVideo
+            src="/videos/arstotzka.webm"
+            title="Arstotzka Demo"
+          />
         </div>
       </section>
       <section className="text-center">
