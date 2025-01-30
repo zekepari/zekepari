@@ -1,6 +1,4 @@
 import CollapsibleVideo from "@/components/CollapsibleVideo";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   Blocks,
   CircleAlert,
@@ -31,14 +29,24 @@ export default function Home() {
                 target="_blank"
                 className="hover:text-blue-600 transition"
               >
-                <FontAwesomeIcon icon={faLinkedin} className="size-8" />
+                <Image
+                  src="/assets/LinkedIn.svg"
+                  height={30}
+                  width={30}
+                  alt="LinkedIn Logo"
+                />
               </Link>
               <Link
                 href="https://github.com/zekepari"
                 target="_blank"
                 className="hover:text-blue-600 transition"
               >
-                <FontAwesomeIcon icon={faGithub} className="size-8" />
+                <Image
+                  src="/assets/GitHub.svg"
+                  height={30}
+                  width={30}
+                  alt="LinkedIn Logo"
+                />
               </Link>
               <Link
                 href="mailto:me@zekepari.dev"
