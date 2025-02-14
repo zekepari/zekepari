@@ -59,7 +59,7 @@ export default function Home() {
           </div>
 
           <Image
-            src="/Zekes.png"
+            src="/me.jpg"
             alt="Picture of me"
             width={200}
             height={200}
