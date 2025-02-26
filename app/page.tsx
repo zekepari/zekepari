@@ -63,7 +63,7 @@ export default function Home() {
             alt="Picture of me"
             width={200}
             height={200}
-            className="aspect-square object-cover border p-2"
+            className=" border p-2"
             sizes="(min-width: 768px) 200px, 150px"
           />
         </div>
@@ -75,7 +75,7 @@ export default function Home() {
         <div className="flex justify-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://skillicons.dev/icons?i=html,css,js,ts,lua,java,python,react,next,mongo,postgresql,vercel,tailwind,prisma&perline=7"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,postgresql,vercel,tailwind&perline=7"
             alt="Skill icons"
             height={100}
             width={1000}
@@ -83,7 +83,7 @@ export default function Home() {
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://skillicons.dev/icons?i=html,css,js,ts,lua,java,python,react,next,mongo,postgresql,vercel,tailwind,prisma"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,postgresql,vercel,tailwind"
             alt="Skill icons"
             height={100}
             width={1000}
@@ -109,7 +109,8 @@ export default function Home() {
         <div>
           <h3>Bachelor of Computer Science</h3>
           <p className="opacity-75">
-            Minor in Cloud Computing • Graduating 2026
+            <span className="font-bold">6.75 GPA</span> • Minor in Cloud
+            Computing • Graduating 2026
           </p>
         </div>
         <div>
@@ -141,16 +142,19 @@ export default function Home() {
             RoGold <Blocks className="inline-block text-amber-500" />
           </h3>
           <p className="opacity-75">
-            Official website for the RoGold extension. Built with Next.js, the
-            site features a sleek and intuitive interface that provides seamless
-            access to extension features, support, and updates. Key
-            implementations include multilingual support, interactive demos, and
-            integration with backend services using Chargebee for subscription
-            management. Enhanced user experience through responsive design,
-            cross-browser optimization, and performance improvements such as
-            file and image optimization. Utilized Docker for streamlined
-            deployment and integrated robust logging with Winston for effective
-            monitoring.
+            Official website for the RoGold extension. This website is packed
+            with features like multilingual support, interactive demos, and
+            integration with backend services like Chargebee for subscription
+            management or the native RoGold API for account management. Fully
+            responsive design and cross-browser optimized. Implemented docker
+            and GitHub actions for streamlined deployment, and robust logging
+            with Winston.
+          </p>
+          <CollapsibleVideo src="/videos/rogold.webm" title="RoGold Demo" />
+          <p className="opacity-75">
+            Also worked on the RoGold extension itself, working on various
+            upgrades such as componentizing code base, improving performance, or
+            adding new features like the ability bulk unfollow users.
           </p>
           <p>
             <Link
