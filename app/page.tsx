@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex items-center">
           <div className="w-full mr-2">
             <h1>Ezekiel (Zeke) Pari</h1>
-            <p className="md:text-lg opacity-75">Full Stack Developer</p>
+            <p className="md:text-lg">Full Stack Developer</p>
             <hr className="-mr-2 mb-2" />
             <div className="flex gap-2 flex-wrap items-center">
               <Link
@@ -87,7 +87,7 @@ export default function Home() {
             alt="Skill icons"
             height={100}
             width={1000}
-            className="hidden w-full sm:block"
+            className="w-full max-sm:hidden"
           />
         </div>
       </section>
@@ -108,7 +108,7 @@ export default function Home() {
         </p>
         <div>
           <h3>Bachelor of Computer Science</h3>
-          <p className="opacity-75">
+          <p>
             <span className="font-bold">6.75 GPA</span> • Minor in Cloud
             Computing • Graduating 2026
           </p>
@@ -141,7 +141,7 @@ export default function Home() {
           <h3>
             RoGold <Blocks className="inline-block text-amber-500" />
           </h3>
-          <p className="opacity-75">
+          <p>
             Official website for the RoGold extension. This website is packed
             with features like multilingual support, interactive demos, and
             integration with backend services like Chargebee for subscription
@@ -151,7 +151,7 @@ export default function Home() {
             with Winston.
           </p>
           <CollapsibleVideo src="/videos/rogold.webm" title="RoGold Demo" />
-          <p className="opacity-75">
+          <p>
             Also worked on the RoGold extension itself, working on various
             upgrades such as componentizing code base, improving performance, or
             adding new features like the ability bulk unfollow users.
@@ -170,7 +170,7 @@ export default function Home() {
           <h3>
             WorldMC <Globe className="inline-block text-blue-500" />
           </h3>
-          <p className="opacity-75">
+          <p>
             A massive multiplayer online experience centered around a map of the
             Earth. This website, as well as the backend API which drives it,
             showcases in-game markets, players, towns, and nations.
@@ -190,7 +190,7 @@ export default function Home() {
           <h3>
             Shockwaves Radio <Radio className="inline-block text-indigo-500" />
           </h3>
-          <p className="opacity-75">
+          <p>
             A radio website featuring live music streaming, staff management,
             and partnerships with games like Farming Simulator and Euro Truck
             Simulator. The platform allows staff to manage playlists, schedules,
@@ -214,7 +214,7 @@ export default function Home() {
           <h3>
             RoLinker <Wrench className="inline-block text-red-500" />
           </h3>
-          <p className="opacity-75">
+          <p>
             Link Roblox and Discord accounts together by connecting both of them
             to RoLinker. Access a discord bot which enables commands for Roblox
             groups, and an optional Roblox bot account to facilitate group
@@ -235,7 +235,7 @@ export default function Home() {
           <h3>
             CarePulse <Hospital className="inline-block text-purple-500" />
           </h3>
-          <p className="opacity-75">
+          <p>
             A patient management system with a patient-centric design. CarePulse
             features an admin dashboard for appointment management, a safe
             sign-on process for new patients, OTP, and SMS appointment
@@ -250,7 +250,7 @@ export default function Home() {
           <h3>
             Arstotzka <Flag className="inline-block text-green-700" />
           </h3>
-          <p className="opacity-75">
+          <p>
             Showcasing various custom features such as user interface,
             marketplace, weapons, economy, NPCs, character customization, and
             crime. The UI design captures the 1980s aesthetic, following the
@@ -264,7 +264,7 @@ export default function Home() {
       </section>
       <section className="text-center">
         <h4>That&apos;s all!</h4>
-        <p className="opacity-75">Thanks for reading.</p>
+        <p>Thanks for reading.</p>
         <Link
           href="mailto:me@zekepari.dev"
           className="hover:text-blue-600 transition-colors"
