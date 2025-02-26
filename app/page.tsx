@@ -22,7 +22,8 @@ export default function Home() {
       <section className="space-y-4">
         <div className="flex items-center">
           <div className="w-full mr-2">
-            <h1>Ezekiel (Zeke) Pari</h1>
+            <h1 className="sm:hidden">Zeke Pari</h1>
+            <h1 className="max-sm:hidden">Ezekiel (Zeke) Pari</h1>
             <p className="md:text-lg">Full Stack Developer</p>
             <hr className="-mr-2 mb-2" />
             <div className="flex gap-2 flex-wrap items-center">
@@ -61,13 +62,13 @@ export default function Home() {
         </div>
 
         <p>
-          My Tech Stack <CornerRightDown className="size-4 inline-block" />
+          My Technologies <CornerRightDown className="size-4 inline-block" />
         </p>
 
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,postgresql,vercel,tailwind&perline=7"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,mysql,kubernetes,docker&perline=7"
             alt="Skill icons"
             height={100}
             width={1000}
@@ -75,7 +76,7 @@ export default function Home() {
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,postgresql,vercel,tailwind"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,mysql,kubernetes,docker"
             alt="Skill icons"
             height={100}
             width={1000}
