@@ -5,8 +5,10 @@ import {
   CornerRightDown,
   ExternalLink,
   Flag,
+  Github,
   Globe,
   Hospital,
+  Linkedin,
   Mail,
   Radio,
   Wrench,
@@ -29,24 +31,14 @@ export default function Home() {
                 target="_blank"
                 className="hover:text-blue-600 transition"
               >
-                <Image
-                  src="/assets/LinkedIn.svg"
-                  height={30}
-                  width={30}
-                  alt="LinkedIn Logo"
-                />
+                <Linkedin height={30} width={30} />
               </Link>
               <Link
                 href="https://github.com/zekepari"
                 target="_blank"
                 className="hover:text-blue-600 transition"
               >
-                <Image
-                  src="/assets/GitHub.svg"
-                  height={30}
-                  width={30}
-                  alt="LinkedIn Logo"
-                />
+                <Github height={30} width={30} />
               </Link>
               <Link
                 href="mailto:me@zekepari.dev"
@@ -63,7 +55,7 @@ export default function Home() {
             alt="Picture of me"
             width={200}
             height={200}
-            className=" border p-2"
+            className="border p-2"
             sizes="(min-width: 768px) 200px, 150px"
           />
         </div>
@@ -72,7 +64,7 @@ export default function Home() {
           My Tech Stack <CornerRightDown className="size-4 inline-block" />
         </p>
 
-        <div className="flex justify-center">
+        <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,postgresql,vercel,tailwind&perline=7"
