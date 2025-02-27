@@ -142,7 +142,7 @@ export default function Home() {
             with features like multilingual support, interactive demos, and
             integration with backend services like Chargebee for subscription
             management or the native RoGold API for account management. Fully
-            responsive design and cross-browser optimized. Implemented docker
+            responsive design and cross-browser optimized. Implemented Docker
             and GitHub actions for streamlined deployment, and robust logging
             with Winston.
           </p>
