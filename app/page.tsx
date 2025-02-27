@@ -68,7 +68,7 @@ export default function Home() {
         <div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,mysql,kubernetes,docker&perline=7"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,postgresql,kubernetes,docker&perline=7"
             alt="Skill icons"
             height={100}
             width={1000}
@@ -76,7 +76,7 @@ export default function Home() {
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,mysql,kubernetes,docker"
+            src="https://skillicons.dev/icons?i=html,css,js,ts,java,python,lua,solidjs,react,next,mongo,postgresql,kubernetes,docker"
             alt="Skill icons"
             height={100}
             width={1000}
@@ -132,7 +132,10 @@ export default function Home() {
         <h2>Projects</h2>
         <div className="space-y-2">
           <h3>
-            RoGold <Blocks className="inline-block text-amber-500" />
+            RoGold <Blocks className="inline-block text-amber-500" />{" "}
+            <span className="font-bold text-base text-red-400">
+              700k+ users
+            </span>
           </h3>
           <p>
             Official website for the RoGold extension. This website is packed
@@ -145,9 +148,10 @@ export default function Home() {
           </p>
           <CollapsibleVideo src="/videos/rogold.webm" title="RoGold Demo" />
           <p>
-            Also worked on the RoGold extension itself, working on various
-            upgrades such as componentizing code base, improving performance, or
-            adding new features like the ability bulk unfollow users.
+            Worked on the RoGold extension itself, implementing upgrades such as
+            componentizing content, optimizing performance, and developing new
+            features—such as bulk unfollowing users—alongside various other
+            improvements.
           </p>
           <p>
             <Link
