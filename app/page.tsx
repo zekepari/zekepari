@@ -4,10 +4,10 @@ import {
   CircleAlert,
   CornerRightDown,
   ExternalLink,
-  Flag,
   Github,
   Globe,
   Hospital,
+  Layers,
   Linkedin,
   Mail,
   Radio,
@@ -88,8 +88,7 @@ export default function Home() {
       <section className="space-y-4">
         <h2>Education</h2>
         <p>
-          <CircleAlert className="size-4 inline-block" /> We&apos;re keeping it
-          simple! •{" "}
+          <CircleAlert className="size-4 inline-block" /> Outside Australia? •{" "}
           <Link
             href="https://www.aqf.edu.au/framework/aqf-qualifications"
             className="text-blue-500 hover:text-blue-400"
@@ -106,26 +105,6 @@ export default function Home() {
             Computing • Graduating 2026
           </p>
         </div>
-        <div>
-          <h3>Certificate in Front-End Development</h3>
-          <Link
-            href="https://www.coursera.org/account/accomplishments/professional-cert/K329R2NDRAS9"
-            className="text-blue-500 hover:text-blue-400"
-            target="_blank"
-          >
-            Digital Certificate <ExternalLink className="inline-block size-4" />
-          </Link>
-        </div>
-        <div>
-          <h3>IT Specialist - Python</h3>
-          <Link
-            href="https://www.credly.com/badges/4c90f5d6-40e9-4263-a534-d141cba93c69/linked_in?t=sdxccf"
-            className="text-blue-500 hover:text-blue-400"
-            target="_blank"
-          >
-            Digital Certificate <ExternalLink className="inline-block size-4" />
-          </Link>
-        </div>
       </section>
       <hr />
       <section className="space-y-4">
@@ -134,28 +113,75 @@ export default function Home() {
           <h3>
             RoGold <Blocks className="inline-block text-amber-500" />{" "}
             <span className="font-bold text-base text-red-400">
-              700k+ users
+              800k+ users
             </span>
           </h3>
           <p>
-            Official website for the RoGold extension. This website is packed
-            with features like multilingual support, interactive demos, and
-            integration with backend services like Chargebee for subscription
-            management or the native RoGold API for account management. Fully
-            responsive design and cross-browser optimized. Implemented Docker
-            and GitHub actions for streamlined deployment, and robust logging
-            with Winston.
+            Multilingual website with interactive demos, Chargebee subscription
+            integration, and native API integration. Implemented Docker, GitHub
+            Actions, and robust logging with Winston.
           </p>
           <CollapsibleVideo src="/videos/rogold.webm" title="RoGold Demo" />
           <p>
-            Worked on the RoGold extension itself, implementing upgrades such as
-            componentizing content, optimizing performance, and developing new
-            features—such as bulk unfollowing users—alongside various other
-            improvements.
+            Migrated all free features into ultimate extension for unified
+            architecture. Built outfit price grabber, outfit copier, and
+            advanced friend request filtering. Optimized core libraries
+            achieving ~70% code reduction with zero functionality loss.
           </p>
           <p>
             <Link
               href="https://rogold.live"
+              className="text-blue-500 hover:text-blue-400"
+              target="_blank"
+            >
+              Visit Website <ExternalLink className="inline-block size-4" />
+            </Link>
+          </p>
+        </div>
+        <div className="space-y-2">
+          <h3>
+            PageSolver <Layers className="inline-block text-emerald-500" />{" "}
+            <span className="font-bold text-base text-emerald-400">
+              Multi-tenant SaaS
+            </span>
+          </h3>
+          <p>
+            Multi-tenant SaaS platform with type-safe development patterns.
+            Built conversion-focused landing page with smooth animations and
+            professional UI components.
+          </p>
+          <p>
+            Created business dashboards with drag-and-drop uploads, before/after
+            comparison tools, and portfolio galleries. Implemented custom
+            authentication, hierarchical data structures, cloud storage
+            integration, feature flag management, subscription billing,
+            recursive UI components, optimistic updates, and animated modals.
+          </p>
+          <p>
+            <Link
+              href="https://pagesolver.com"
+              className="text-blue-500 hover:text-blue-400"
+              target="_blank"
+            >
+              Visit Website <ExternalLink className="inline-block size-4" />
+            </Link>
+          </p>
+        </div>
+        <div className="space-y-2">
+          <h3>
+            RoLinker <Wrench className="inline-block text-red-500" />
+          </h3>
+          <p>
+            Roblox OAuth integration enabling multi-account linking to Discord
+            with many-to-many relationships. Built user dashboards for account
+            management, cookie-based authentication for Discord bot
+            functionality, server divisions, and developer API. Deployed to the
+            edge for global performance.
+          </p>
+          <CollapsibleVideo src="/videos/rolinker.webm" title="RoLinker Demo" />
+          <p>
+            <Link
+              href="https://rolinker.net"
               className="text-blue-500 hover:text-blue-400"
               target="_blank"
             >
@@ -209,27 +235,6 @@ export default function Home() {
         </div>
         <div className="space-y-2">
           <h3>
-            RoLinker <Wrench className="inline-block text-red-500" />
-          </h3>
-          <p>
-            Link Roblox and Discord accounts together by connecting both of them
-            to RoLinker. Access a discord bot which enables commands for Roblox
-            groups, and an optional Roblox bot account to facilitate group
-            management from Discord.
-          </p>
-          <CollapsibleVideo src="/videos/rolinker.webm" title="RoLinker Demo" />
-          <p>
-            <Link
-              href="https://rolinker.net"
-              className="text-blue-500 hover:text-blue-400"
-              target="_blank"
-            >
-              Visit Website <ExternalLink className="inline-block size-4" />
-            </Link>
-          </p>
-        </div>
-        <div className="space-y-2">
-          <h3>
             CarePulse <Hospital className="inline-block text-purple-500" />
           </h3>
           <p>
@@ -241,21 +246,6 @@ export default function Home() {
           <CollapsibleVideo
             src="/videos/carepulse.webm"
             title="CarePulse Demo"
-          />
-        </div>
-        <div className="space-y-2">
-          <h3>
-            Arstotzka <Flag className="inline-block text-green-700" />
-          </h3>
-          <p>
-            Showcasing various custom features such as user interface,
-            marketplace, weapons, economy, NPCs, character customization, and
-            crime. The UI design captures the 1980s aesthetic, following the
-            theme of Arstotzka.
-          </p>
-          <CollapsibleVideo
-            src="/videos/arstotzka.webm"
-            title="Arstotzka Demo"
           />
         </div>
       </section>
