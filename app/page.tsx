@@ -1,29 +1,27 @@
 import CollapsibleVideo from "@/components/CollapsibleVideo";
 import {
   Blocks,
+  Bot,
   CircleAlert,
   CornerRightDown,
   ExternalLink,
   Github,
   Globe,
-  Hospital,
   Layers,
   Linkedin,
   Mail,
   Radio,
   Wrench,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 py-8">
       <section className="space-y-4">
         <div className="flex items-center">
           <div className="w-full mr-2">
-            <h1 className="sm:hidden">Zeke Pari</h1>
-            <h1 className="max-sm:hidden">Ezekiel (Zeke) Pari</h1>
+            <h1>Ezekiel (Zeke) Pari</h1>
             <p className="md:text-lg">Full Stack Developer</p>
             <hr className="-mr-2 mb-2" />
             <div className="flex gap-2 flex-wrap items-center">
@@ -50,15 +48,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-
-          <Image
-            src="/me.jpg"
-            alt="Picture of me"
-            width={200}
-            height={200}
-            className="border p-2"
-            sizes="(min-width: 768px) 200px, 150px"
-          />
         </div>
 
         <p>
@@ -109,6 +98,34 @@ export default function Home() {
       <hr />
       <section className="space-y-4">
         <h2>Projects</h2>
+        <div className="space-y-2">
+          <h3>
+            SmartCall AI <Bot className="inline-block text-rose-500" />
+          </h3>
+          <p>
+            AI-powered phone receptionist platform with real-time voice
+            handling. Built low-latency audio streaming using Azure
+            Communication Services, signed WebSocket connections, and
+            GPT-mini-realtime. Implemented intent-aware call routing, automatic
+            lead capture, appointment booking, and full call summaries.
+          </p>
+          <p>
+            Designed the backend with Azure Functions, Event Grid, and
+            containerised processors for scalable burst-based execution. Added
+            role-based dashboards, CRM-ready data structures, voicemail
+            transcription, multilingual support, and configurable agent
+            personalities.
+          </p>
+          <p>
+            <Link
+              href="https://smartcallai.com.au"
+              className="text-blue-500 hover:text-blue-400"
+              target="_blank"
+            >
+              Visit Website <ExternalLink className="inline-block size-4" />
+            </Link>
+          </p>
+        </div>
         <div className="space-y-2">
           <h3>
             RoGold <Blocks className="inline-block text-amber-500" />{" "}
@@ -232,21 +249,6 @@ export default function Home() {
               Visit Website <ExternalLink className="inline-block size-4" />
             </Link>
           </p>
-        </div>
-        <div className="space-y-2">
-          <h3>
-            CarePulse <Hospital className="inline-block text-purple-500" />
-          </h3>
-          <p>
-            A patient management system with a patient-centric design. CarePulse
-            features an admin dashboard for appointment management, a safe
-            sign-on process for new patients, OTP, and SMS appointment
-            verification/confirmation.
-          </p>
-          <CollapsibleVideo
-            src="/videos/carepulse.webm"
-            title="CarePulse Demo"
-          />
         </div>
       </section>
       <section className="text-center">
