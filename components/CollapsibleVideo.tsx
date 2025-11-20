@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { ChevronDown } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 interface CollapsibleVideoProps {
   src: string;
@@ -15,14 +15,48 @@ export default function CollapsibleVideo({
 }: CollapsibleVideoProps) {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
-  const contentHeightRef = useRef<number>(0);
+  const [contentHeight, setContentHeight] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
+  const measureHeight = useCallback(() => {
     if (contentRef.current) {
-      contentHeightRef.current = contentRef.current.scrollHeight;
+      setContentHeight(contentRef.current.scrollHeight);
     }
-  }, [src]);
+  }, []);
+
+  useEffect(() => {
+    measureHeight();
+
+    const handleResize = () => measureHeight();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [measureHeight, src]);
+
+  useEffect(() => {
+    if (isOpen) {
+      measureHeight();
+    }
+  }, [isOpen, measureHeight]);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+    if (!videoElement) {
+      return;
+    }
+
+    const handleVideoLoad = () => measureHeight();
+
+    videoElement.addEventListener("loadedmetadata", handleVideoLoad);
+    videoElement.addEventListener("loadeddata", handleVideoLoad);
+
+    return () => {
+      videoElement.removeEventListener("loadedmetadata", handleVideoLoad);
+      videoElement.removeEventListener("loadeddata", handleVideoLoad);
+    };
+  }, [measureHeight, src]);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -54,7 +88,7 @@ export default function CollapsibleVideo({
       <div
         ref={contentRef}
         style={{
-          maxHeight: isOpen ? `${contentHeightRef.current}px` : "0px",
+          maxHeight: isOpen ? `${contentHeight}px` : "0px",
         }}
         className="overflow-hidden transition-max-height duration-300"
         aria-hidden={!isOpen}
