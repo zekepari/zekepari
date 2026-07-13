@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { ChevronDown } from "lucide-react";
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useId } from "react";
 
 interface CollapsibleVideoProps {
   src: string;
@@ -17,6 +17,7 @@ export default function CollapsibleVideo({
   const contentRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const contentId = useId();
 
   const measureHeight = useCallback(() => {
     if (contentRef.current) {
@@ -75,6 +76,8 @@ export default function CollapsibleVideo({
       <button
         className="w-full flex justify-between items-center p-4 font-semibold"
         onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-controls={contentId}
       >
         {title}
         <ChevronDown
@@ -86,14 +89,23 @@ export default function CollapsibleVideo({
       </button>
 
       <div
+        id={contentId}
         ref={contentRef}
+        inert={!isOpen}
         style={{
           maxHeight: isOpen ? `${contentHeight}px` : "0px",
         }}
         className="overflow-hidden transition-max-height duration-300"
         aria-hidden={!isOpen}
       >
-        <video ref={videoRef} className="w-full" muted controls loop>
+        <video
+          ref={videoRef}
+          className="w-full"
+          muted
+          controls
+          loop
+          preload="none"
+        >
           <source src={src} type="video/webm" />
           Your browser does not support the video tag.
         </video>
