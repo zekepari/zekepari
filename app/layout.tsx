@@ -14,8 +14,53 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Zeke Pari Portfolio",
-  description: "Zeke's Developer Portfolio",
+  metadataBase: new URL("https://zekepari.dev"),
+  title: "Ezekiel (Zeke) Pari | MESR Co-founder & Product Builder",
+  description:
+    "Ezekiel (Zeke) Pari is a Brisbane-based Computer Science student, product builder, and co-founder of MESR.",
+  applicationName: "Ezekiel Pari",
+  authors: [{ name: "Ezekiel Pari", url: "https://zekepari.dev/" }],
+  creator: "Ezekiel Pari",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "profile",
+    url: "https://zekepari.dev/",
+    siteName: "Ezekiel Pari",
+    title: "Ezekiel (Zeke) Pari | MESR Co-founder & Product Builder",
+    description:
+      "Brisbane-based Computer Science student, product builder, and co-founder of MESR.",
+    firstName: "Ezekiel",
+    lastName: "Pari",
+    username: "zekepari",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Ezekiel (Zeke) Pari — MESR co-founder and product builder",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ezekiel (Zeke) Pari | MESR Co-founder & Product Builder",
+    description:
+      "Brisbane-based Computer Science student, product builder, and co-founder of MESR.",
+    images: ["/opengraph-image"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
