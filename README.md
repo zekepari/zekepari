@@ -1,10 +1,10 @@
 # Ezekiel (Zeke) Pari
 
-Student. Product builder. Co-founder of [MESR](https://mesr.ai).
+Product and systems builder. Co-founder of [MESR](https://mesr.ai).
 
 I build useful products and the operating systems around them. Right now, I am
-focused on MESR: turning scattered infrastructure observations and records into
-source-linked information that decision owners can review and act on.
+focused on MESR: a configurable infrastructure inspection app that turns photos
+and video into AI-assisted condition assessments.
 
 I am also a three-time GovHack award winner, a 2026 Generation Innovation
 participant, and a Computer Science student in Brisbane, Australia.

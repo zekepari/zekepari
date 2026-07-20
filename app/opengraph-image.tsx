@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const alt =
-  "Ezekiel (Zeke) Pari — MESR co-founder and product builder";
+  "Ezekiel (Zeke) Pari — MESR co-founder and product systems builder";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -48,7 +48,7 @@ export default function OpenGraphImage() {
               marginTop: 28,
             }}
           >
-            Student. Builder. MESR co-founder.
+            MESR co-founder. Product &amp; systems builder.
           </div>
         </div>
         <div style={{ color: "#737373", display: "flex", fontSize: 24 }}>
