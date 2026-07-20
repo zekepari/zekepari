@@ -15,9 +15,9 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zekepari.dev"),
-  title: "Ezekiel (Zeke) Pari | MESR Co-founder & Product Builder",
+  title: "Ezekiel (Zeke) Pari | Co-founder of MESR",
   description:
-    "Ezekiel (Zeke) Pari is a Brisbane-based Computer Science student, product builder, and co-founder of MESR.",
+    "Brisbane-based product and systems builder, Computer Science student, and co-founder of MESR, building AI-assisted condition assessments for infrastructure.",
   applicationName: "Ezekiel Pari",
   authors: [{ name: "Ezekiel Pari", url: "https://zekepari.dev/" }],
   creator: "Ezekiel Pari",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     type: "profile",
     url: "https://zekepari.dev/",
     siteName: "Ezekiel Pari",
-    title: "Ezekiel (Zeke) Pari | MESR Co-founder & Product Builder",
+    title: "Ezekiel (Zeke) Pari | Co-founder of MESR",
     description:
-      "Brisbane-based Computer Science student, product builder, and co-founder of MESR.",
+      "MESR co-founder and product systems builder, building AI-assisted condition assessments for infrastructure.",
     firstName: "Ezekiel",
     lastName: "Pari",
     username: "zekepari",
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Ezekiel (Zeke) Pari — MESR co-founder and product builder",
+        alt: "Ezekiel (Zeke) Pari — MESR co-founder and product systems builder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ezekiel (Zeke) Pari | MESR Co-founder & Product Builder",
+    title: "Ezekiel (Zeke) Pari | Co-founder of MESR",
     description:
-      "Brisbane-based Computer Science student, product builder, and co-founder of MESR.",
+      "MESR co-founder and product systems builder, building AI-assisted condition assessments for infrastructure.",
     images: ["/opengraph-image"],
   },
   robots: {
@@ -69,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-AU">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen text-neutral-800 tracking-wide py-4 max-w-(--breakpoint-md) container`}
       >

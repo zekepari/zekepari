@@ -18,7 +18,7 @@ const profileJsonLd = {
       name: "Ezekiel Pari",
       alternateName: ["Zeke Pari", "Ezekiel (Zeke) Pari"],
       url: "https://zekepari.dev/",
-      jobTitle: "Co-founder of MESR",
+      jobTitle: "Co-founder (Product & Systems) at MESR",
       sameAs: [
         "https://www.linkedin.com/in/ezekiel-pari-96a458258/",
         "https://github.com/zekepari",
@@ -79,7 +79,9 @@ export default function Home() {
         <div className="flex items-center">
           <div className="w-full mr-2">
             <h1>Ezekiel (Zeke) Pari</h1>
-            <p className="md:text-lg">Student. Builder. Co-founder.</p>
+            <p className="md:text-lg">
+              MESR co-founder. Product &amp; systems builder.
+            </p>
             <hr className="-mr-2 mb-2" />
             <div className="flex gap-2 flex-wrap items-center">
               <Link
@@ -112,9 +114,9 @@ export default function Home() {
         </div>
 
         <p className="max-w-2xl">
-          I&apos;m Ezekiel (Zeke) Pari, a Brisbane-based Computer Science
-          student, product builder, and co-founder of MESR. I build things —
-          some useful, some weird, usually both.
+          I&apos;m Ezekiel (Zeke) Pari, a Brisbane-based product and systems
+          builder and Computer Science student. I co-founded MESR, where
+          we&apos;re building AI-assisted condition assessments for infrastructure.
         </p>
       </section>
       <hr />
@@ -126,11 +128,18 @@ export default function Home() {
             <span>Co-founder, MESR</span>
           </h3>
           <p>
-            Right now, the thing I care most about is MESR. I co-founded it
-            because infrastructure decisions should not rely on information
-            that is scattered, outdated, or difficult to trust. We&apos;re turning
-            observations and records into source-linked information people can
-            review and act on.
+            Right now, the thing I care most about is MESR. We&apos;re building a
+            configurable infrastructure inspection app that turns photos and
+            video into AI-assisted condition assessments. Field teams capture
+            through the method that fits the site; civil and asset engineers
+            review the condition, supporting imagery, and uncertainty before
+            moving the assessment into existing inspection and maintenance
+            workflows.
+          </p>
+          <p>
+            My work spans product and systems across that workflow, from
+            flexible capture and AI analysis to engineering review and
+            operational handoff.
           </p>
           <p>
             <Link
