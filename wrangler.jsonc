@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zekepari",
+  "account_id": "fb1855c9ffe72eac0deb5632d37ac6ae",
+  "compatibility_date": "2026-10-30",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "zekepari.dev/*",
+      "zone_name": "zekepari.dev"
+    },
+    {
+      "pattern": "www.zekepari.dev/*",
+      "zone_name": "zekepari.dev"
+    }
+  ]
+}
