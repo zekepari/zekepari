@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "deploy:cloudflare": "opennextjs-cloudflare deploy",
+    "preview:cloudflare": "opennextjs-cloudflare preview"
   },
   "dependencies": {
+    "@opennextjs/cloudflare": "1.14.8",
     "clsx": "^2.1.1",
     "lucide-react": "^0.476.0",
     "next": "16.0.10",
@@ -24,7 +28,8 @@
     "eslint-config-next": "16.0.3",
     "postcss": "^8",
     "tailwindcss": "^4.0.9",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "4.156.0"
   },
   "overrides": {
     "@types/react": "19.2.6",
